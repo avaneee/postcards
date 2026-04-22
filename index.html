@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Postcard Archive</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div class="controls">
+        <button id="toggleBtn">Organize Collection</button>
+    </div>
+
+    <div id="canvas" class="pile-mode">
+        <div class="postcard" style="--rand-r: 5deg; --rand-x: 10px; --rand-y: -5px;">
+            <div class="postcard-inner">
+                <div class="side front">
+                    <img src="postcard1-front.png" alt="Front">
+                </div>
+                <div class="side back">
+                    <img src="postcard1-back.png" alt="Back">
+                </div>
+            </div>
+        </div>
+
+        <div class="postcard" style="--rand-r: -8deg; --rand-x: -15px; --rand-y: 10px;">
+            <div class="postcard-inner">
+                <div class="side front">
+                    <img src="postcard2-front.png" alt="Front">
+                </div>
+                <div class="side back">
+                    <img src="postcard2-back.png" alt="Back">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
 </body>
 </html>
