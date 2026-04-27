@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Postcard Archive</title>
-    <link rel="stylesheet" href="home.css">
+    <!-- css properties linked -->
+    <link rel="stylesheet" href="homepage.css">
+    <title>the postcard archive</title>
 </head>
 <body>
+    <!-- nav from 2010 time traveler -->
+    <div class="nav-parent">
+		<!-- <nav> -->
+                    <!-- THESE LINKS NEED TO BE FIXED -->
+		<p class="homepage"><a href="../">home</a></p>
+		<div class=spacer></div>
+		<p class="nav-para"><a href="../1990s/">globe</a></p>
+		<p class="nav-para"><a href="../2000s/">inventory</a></p>
+		<p class="nav-para"><a href="./">about</a></p>
+		<!-- </nav> -->
+	</div>
 
-    <div class="controls">
-        <button id="toggleBtn">Organize Collection</button>
-    </div>
-
-    <div id="canvas" class="pile-mode">
-        <div class="postcard" style="--rand-r: 5deg; --rand-x: 10px; --rand-y: -5px;">
-            <div class="postcard-inner">
-                <div class="side front">
-                    <img src="postcard1-front.png" alt="Front">
-                </div>
-                <div class="side back">
-                    <img src="postcard1-back.png" alt="Back">
-                </div>
-            </div>
+    <!-- postcard rack images that change on scroll {illusion of rotation} -->
+    <div class="scroll-container">
+        <div class="sticky-rack">
+            <img src="/assets/rack/rack1.png" class="rack-frame active" alt="Frame 1">
+            <img src="/assets/rack/rack2.png" class="rack-frame" alt="Frame 2">
+            <img src="/assets/rack/rack3.png" class="rack-frame" alt="Frame 3">
+            <img src="/assets/rack/rack4.png" class="rack-frame" alt="Frame 4">
+            <img src="/assets/rack/rack5.png" class="rack-frame" alt="Frame 5">
+            <img src="/assets/rack/rack6.png" class="rack-frame" alt="Frame 6">
+            <img src="/assets/rack/rack7.png" class="rack-frame" alt="Frame 7">
+            <img src="/assets/rack/rack8.png" class="rack-frame" alt="Frame 8">
+            <img src="/assets/rack/rack9.png" class="rack-frame" alt="Frame 9">
         </div>
-
-        <div class="postcard" style="--rand-r: -8deg; --rand-x: -15px; --rand-y: 10px;">
-            <div class="postcard-inner">
-                <div class="side front">
-                    <img src="postcard2-front.png" alt="Front">
-                </div>
-                <div class="side back">
-                    <img src="postcard2-back.png" alt="Back">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="home.js"></script>
+</div>
+    
+    <!-- javacript file linked -->
+    <script src="homepage.js"></script>
 </body>
 </html>

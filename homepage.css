@@ -1,0 +1,139 @@
+/* Add styles to all elements */
+* {
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+}
+
+/* css stuff from 2010 site */
+body {
+	background-color: rgba(255, 192, 203, 0.615);
+}
+
+h1{
+	margin: 10px auto;
+	text-align: center;
+}
+
+.nav-parent{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	background-color: pink;
+	padding: 10px;
+	gap: 5px;
+	/* keep it in place */
+	position: sticky;
+    top: 0;
+    z-index: 1000;  
+}
+
+.nav-para{
+	background-color: rgba(253, 150, 167, 0.766);
+	display: inline; 
+	flex-grow: 1;
+	border-radius: 12px;
+	padding-top: .5%;
+	padding-bottom: .5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	transition: flex-grow .3s;
+}
+
+.homepage{
+	display: inline; 
+	flex-grow: 1;
+	transition: flex-grow .3s;
+}
+
+.nav-para:hover{
+	flex-grow: 20;
+}
+
+.nav-para:active{
+	background-color: rgba(255, 130, 149, 0.801);
+}
+
+.pos-sticky {
+	position: sticky;
+	top: 80px;
+}
+
+.spacer{
+	flex-grow: 100;
+}
+
+.body-p{
+	background-color: rgb(255, 192, 202);
+	padding: 20px;
+	max-width: 530px;
+	margin: 10px auto;
+	border-radius: 10px;
+	/* add a shadow? */
+	transition: scale .1s;
+	border: 2px, solid, rgb(229, 147, 161) ;
+}
+
+.body-p:hover{
+	scale: 1.02;
+}
+
+.body-p:active{
+	z-index:999;
+}
+
+.highlight:hover{
+	background-color: rgba(255, 255, 0, 0.43);
+}
+.grid-parent{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 20px;
+	gap: 30px;
+	row-gap: 500px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+.body-p:hover {
+	scale: 1.02;
+}
+
+/* end of older copied css */
+
+
+/* for scrolling rack */
+.scroll-container {
+    height: 500vh; /* Total scroll length (about 5 screens worth) */
+    position: relative;
+    transition: .1s;
+}
+
+.sticky-rack {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rack-frame {
+    position: absolute;
+    max-height: 80vh;
+    width: auto;
+    opacity: 0;
+}
+
+.rack-frame.active {
+    opacity: 1;
+}
+
+/* other things i added */
+.scroll-container:hover{
+    scale: 1.01;
+    cursor: pointer;
+}
