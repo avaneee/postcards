@@ -145,7 +145,7 @@ a{
     height: 100vh;
     z-index: -1;
 
-	background-image: url("/assets/background/paper1.jpg");
+	background-image: url("assets/background/paper1.jpg");
     background-repeat: no-repeat;
     background-position: center;
 	background-size: cover; 
