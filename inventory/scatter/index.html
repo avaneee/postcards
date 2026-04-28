@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css properties linked -->
+    <link rel="stylesheet" href="inventory.css">
+    <title>the inventory</title>
+</head>
+
+<body>
+    <!-- background -->
+    <div class="bg"></div>
+
+    <!-- initial code, slowly editing -->
+    <div class="controls">
+        <!-- change the css for these buttons -->
+        <button id="toggleBtn">organise</button>
+    </div>
+
+    <div id="canvas" class="pile-mode">
+        <div class="postcard" 
+        style="--rand-r: 5deg; --rand-x: 10px; --rand-y: -5px;">
+        <!-- individual styling for each postcard here for that scatter effect -->
+        <!-- maybe have like max 20 postcards here but then have a see all button that takes you to the actual entire inventory? -->
+            <div class="postcard-inner">
+                <div class="side front">
+                    <img src="postcard1-front.png" alt="Front">
+                </div>
+                <div class="side back">
+                    <img src="postcard1-back.png" alt="Back">
+                </div>
+            </div>
+        </div>
+
+        <div class="postcard" style="--rand-r: -8deg; --rand-x: -15px; --rand-y: 10px;">
+            <div class="postcard-inner">
+                <div class="side front">
+                    <img src="postcard2-front.png" alt="Front">
+                </div>
+                <div class="side back">
+                    <img src="postcard2-back.png" alt="Back">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- javacript file linked -->
+    <script src="scatter.js"></script>
+</body>
+
+</html>

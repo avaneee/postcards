@@ -13,3 +13,88 @@
 
 	filter: contrast(1.1) brightness(0.95);
 }
+
+/* style.css */
+body {
+    overflow-x: hidden;
+}
+
+.controls {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+#toggleBtn {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#canvas {
+    position: relative;
+    width: 90vw;
+    margin: 100px auto;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    perspective: 1000px;
+}
+
+/* Postcard Container */
+/* THIS NEEDS TO CHANGE - i want the entire image every time, not some cropped version */
+.postcard {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+/* The Flipper Logic */
+.postcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}
+
+.postcard:hover .postcard-inner {
+    transform: rotateY(180deg);
+}
+
+.side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: #fffcf0;
+}
+
+.side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Grid Mode Styles */
+.grid-mode .postcard {
+    position: relative;
+    transform: translate(0, 0) rotate(0deg) !important;
+}
+
+/* ALSO MEDIA QUERIES HERE FOR THE GRID? */
