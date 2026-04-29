@@ -25,7 +25,7 @@ h1{
     align-items: center;
 	background-color: rgba(255, 246, 219, 0.558);
 	padding: 10px;
-	gap: 5px;
+	gap: 15px;
 	/* keep it in place */
 	position: sticky;
     top: 0;
@@ -36,7 +36,7 @@ h1{
 	background-color: rgba(93, 54, 44, 0.292);
 	display: inline; 
 	flex-grow: 1;
-	border-radius: 12px;
+	border-radius: 18px;
 	padding-top: .5%;
 	padding-bottom: .5%;
 	padding-left: 2%;
