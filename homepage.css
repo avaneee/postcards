@@ -23,7 +23,7 @@ h1{
 	display: flex;
     flex-direction: row;
     align-items: center;
-	background-color: pink;
+	background-color: rgba(255, 246, 219, 0.558);
 	padding: 10px;
 	gap: 5px;
 	/* keep it in place */
@@ -33,7 +33,7 @@ h1{
 }
 
 .nav-para{
-	background-color: rgba(253, 150, 167, 0.766);
+	background-color: rgba(93, 54, 44, 0.292);
 	display: inline; 
 	flex-grow: 1;
 	border-radius: 12px;
@@ -41,7 +41,7 @@ h1{
 	padding-bottom: .5%;
 	padding-left: 2%;
 	padding-right: 2%;
-	transition: flex-grow .3s;
+	transition: scale .3s, background-color .1s;
 }
 
 .homepage{
@@ -51,11 +51,11 @@ h1{
 }
 
 .nav-para:hover{
-	flex-grow: 20;
+	scale: 1.1;
 }
 
 .nav-para:active{
-	background-color: rgba(255, 130, 149, 0.801);
+	background-color: rgba(255, 255, 255, 0.571);
 }
 
 .pos-sticky {
