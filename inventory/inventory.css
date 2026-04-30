@@ -32,10 +32,9 @@ body {
 	background-color: rgba(255, 246, 219, 0.558);
 	padding: 10px;
 	gap: 15px;
-	/* keep it in place */
-	/* position: sticky; */
     top: 0;
     z-index: 1000;  
+    position: fixed;
 }
 
 .nav-para{
@@ -122,7 +121,8 @@ a{
 }
 
 .postcard:hover .postcard-inner {
-    transform: rotateY(180deg);
+    transform: rotate(2deg);
+    /* transform: rotateY(180deg); */
 }
 
 .side {
